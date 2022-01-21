@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BruCorp | CRUD JS</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../mouse.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+
+
+<body>
+    <div class="w3-container w3-green">
+        <h1>Crud Javascript</h1>
+        <p>Este crud usando selects <b>programado por un BP</b> </p>
+    </div>
+    <form class="w3-container"></form>
+    <input class="w3-input" type="text" id="brand" name="brand" placeholder="Marca" />
+    <input class="w3-input" type="text" id="model" name="model" placeholder="Modelo" />
+    <input class="w3-input" type="text" id="storage" name="storage" placeholder="Almacenamiento" />
+    <input class="w3-input" type="text" id="ram" name="ram" placeholder="Ram" />
+    <label>Colores disponibles</label>
+    <select class="w3-input" name="select" id="color" placeholer="Color">
+        <option value="Rojo">Rojo</option>
+        <option value="Negro" selected>Negro</option>
+        <option value="Blanco">Blanco</option>
+        <option value="Morado">Morado</option>
+        <option value="Dorado">Dorado</option>
+        <option value="Azul">Azul</option>
+      </select>
+    <input class="w3-input" type="number" id="stock" name="stock" placeholder="Stock" />
+
+    <br></br>
+    <button class="w3-button w3-round w3-yellow" onclick="clearForm()">Limpiar Formulario</button>
+    <br /><br />
+    <button class="w3-button w3-large w3-circle w3-xlarge w3-ripple w3-teal" onclick="create()">Agregar</button>
+    <button class="w3-btn w3-white w3-border w3-border-green w3-round-xlarge" onclick="update()">Actualizar</button>
+    <button class="w3-btn w3-red" onclick="deleteItem()">Elimiar</button>
+
+    <br></br>
+    <select size="20" id="panel" style="width:500px" onclick="panelClick()"></select>
+</body>
+<script src="index.js"></script>
+
+</html>
